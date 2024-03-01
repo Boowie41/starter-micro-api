@@ -119,6 +119,10 @@ const embed = new EmbedBuilder()
   
 })
 
+app.all('/ping', (req, res) => {
+  res.send('Pong!');
+})
+
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)
 })
