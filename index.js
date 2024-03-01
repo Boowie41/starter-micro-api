@@ -76,6 +76,7 @@ app.get('/ticket', (req, res) => {
   let aide = req.query.aide;
   let style = req.query.style;
   let origine = req.query.origine;
+  let ip = req.query.ip;
 
   console.log(pds, pmc, age, micro, vous, mc, pala, metiers, sanctions, horaires, pvp, farm, build, deco, pillage, fac, objectifs, richesses, grade, pkn, pkv, aide, style, origine)
 
@@ -113,6 +114,7 @@ const embed = new EmbedBuilder()
     - Style de jeu : ${style}
     - Où il/elle à eu le formulaire : ${origine}
     `)
+    .setFooter({ text: `Executed by ${ip}`})
     .setTimestamp()
 
     channel.send({ embeds: [embed] });
