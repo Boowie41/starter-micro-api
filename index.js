@@ -80,7 +80,7 @@ app.get('/ticket', (req, res) => {
   console.log(pds, pmc, age, micro, vous, mc, pala, metiers, sanctions, horaires, pvp, farm, build, deco, pillage, fac, objectifs, richesses, grade, pkn, pkv, aide, style, origine)
 
   
-  res.send("<script>window.open('https://discord.com/invite/5ncjAccPyk')</script>");
+  res.send("<script>document.location.href = 'https://discord.com/invite/5ncjAccPyk'</script>");
 
 const channel = client.channels.cache.get('1212932116329922600');
   
