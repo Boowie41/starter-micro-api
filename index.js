@@ -82,7 +82,7 @@ app.get('/ticket', (req, res) => {
   
   res.send("Votre requête à bien été prise en compte, nous vous répondrons sous peu dans vos dm discord !");
 
-const channel = client.channels.cache.get('1212925184336728197');
+const channel = client.channels.cache.get('1212932116329922600');
   
 const embed = new EmbedBuilder()
     .setColor(0x6600FF)
