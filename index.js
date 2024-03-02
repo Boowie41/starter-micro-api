@@ -49,10 +49,8 @@ exec("node deploy-commands.js", (error, stdout, stderr) => {
         return;
     }
     console.log(`stdout: ${stdout}`);
+    client.login(token);
 });
-
-client.login(token);
-
 
 
 const express = require('express');
